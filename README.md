@@ -2,6 +2,8 @@
 
 Animator is a tool for making GIF animation files from MATLAB® code.
 
+![](code/doc/logo_demo.gif)
+
 ## Setup
 
 Here's how it works.
