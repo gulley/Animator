@@ -1,3 +1,5 @@
+[![View Animator on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/119683-animator)
+
 # Animator
 
 Animator is a tool for making GIF animation files from MATLAB® code.
