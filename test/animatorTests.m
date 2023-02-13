@@ -23,7 +23,12 @@ classdef animatorTests < matlab.unittest.TestCase
             codeLine = "a = 12 % 10..20";
             [sweepVar, startVal, sweepRange] = splitCode(codeLine);
             testCase.verifyEqual(sweepVar,'a')
-            testCase.verifyEqual(startVal,12)
+            
+            % --------------------------
+            % This test should now fail!
+            testCase.verifyEqual(startVal,14)
+            % --------------------------
+            
             testCase.verifyEqual(sweepRange,[10,20])
         end
 
