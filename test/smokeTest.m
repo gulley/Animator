@@ -21,7 +21,7 @@ assert(isequal(sweepRange,[]))
 
 [sweepVar, startVal, sweepRange] = splitCode("result = -20.17;");
 assert(isequal(sweepVar,"result"))
-assert(isequal(startVal,20.17))
+assert(isequal(startVal,-20.17))
 assert(isequal(sweepRange,[]))
 
 %%
