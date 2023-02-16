@@ -4,7 +4,8 @@ h = animator;
 
 %%
 
-[var,val,rng] = splitCode("x = 12;  %  1..20");
+% FAILING
+[var,val,rng] = splitCode("x = 12;  %  1..20", 17);
 
 %%
 
