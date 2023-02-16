@@ -14,6 +14,9 @@ function [sweepVar, startVal, sweepRange] = splitCode(codeLine)
     % Strip all whitespace from the variable name
     sweepVar = stripWhitespace(codeParts{1});
     
+    % FAILING 
+    sweepVar = 0;
+    
     remainder = codeParts{2};
     codeParts = regexp(remainder,'%','split');
     startVal = str2num(codeParts{1});
