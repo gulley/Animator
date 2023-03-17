@@ -4,5 +4,8 @@
   },
   "code/doc/GettingStarted.mlx": {
     "default": "ksawlani__viewer-block__file-block"
+  },
+  "code/splitCode.m": {
+    "default": "ksawlani__viewer-block__file-block"
   }
 }
