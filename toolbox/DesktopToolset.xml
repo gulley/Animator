@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toolset id="user_apps_toolset" template="false">
+   <tool app_file_path="animator.mlapp" handler_class="com.mathworks.deployment.desktop.toolstrip.ToolboxToolSetExtensionHandler" id="f7af5890-1f19-40be-a0c0-fe15693618cf:animator.mlapp" label="animator" quick_access_eligible="false" toolset_id="user_apps_toolset">
+      <callback>animator</callback>
+      <icon filename="matlab_app_generic_icon_24"/>
+      <icon filename="matlab_app_generic_icon_16"/>
+      <parent_tool id="my_apps" toolset_id="apps_toolset"/>
+   </tool>
+</toolset>
