@@ -8,7 +8,7 @@
 
 Animator is a tool for making GIF animation files from MATLAB® code.
 
-![Rotating membrane](code/doc/logo_demo.gif)
+![Rotating membrane](toolbox/examples/logo_demo.gif)
 
 ## Setup
 
@@ -20,7 +20,7 @@ Here's how it works.
 The Animator then manipulates your code and takes snapshots of the resulting plot. These snapshots are
 gathered into the GIF animation file and saved to disk.
  
-![How it works](img/howto.png)
+![How it works](images/howto.png)
 
 For more information, look at the documentation files in the code/doc/ directory, especially GettingStarted.mlx
 
