@@ -1,13 +1,13 @@
 <deployment-project plugin="plugin.toolbox" plugin-version="1.0">
-  <configuration file="\\mathworks\devel\sandbox\gulley\github-enterprise\Animator\ToolboxPackagingConfiguration.prj" location="\\mathworks\devel\sandbox\gulley\github-enterprise\Animator" name="ToolboxPackagingConfiguration" target="target.toolbox" target-name="Package Toolbox">
+  <configuration build-checksum="3623420736" file="C:\Users\gulley\OneDrive - MathWorks\Shared with Everyone\git\github-ext-gulley\Animator\ToolboxPackagingConfiguration.prj" location="C:\Users\gulley\OneDrive - MathWorks\Shared with Everyone\git\github-ext-gulley\Animator" name="ToolboxPackagingConfiguration" target="target.toolbox" target-name="Package Toolbox">
     <param.appname>Animator</param.appname>
     <param.authnamewatermark>Ned Gulley</param.authnamewatermark>
     <param.email>gulley@mathworks.com</param.email>
     <param.company>MathWorks</param.company>
     <param.summary />
     <param.description />
-    <param.screenshot>${PROJECT_ROOT}\img\membrane.png</param.screenshot>
-    <param.version>1.0</param.version>
+    <param.screenshot>${PROJECT_ROOT}\images\membrane.png</param.screenshot>
+    <param.version>1.1</param.version>
     <param.output>${PROJECT_ROOT}\Animator.mltbx</param.output>
     <param.products.name />
     <param.products.id />
@@ -49,9 +49,11 @@ ToolboxPackagingConfiguration.prj</param.exclude.filters>
     <param.examples />
     <param.demosxml />
     <param.apps />
-    <param.registered.apps />
+    <param.registered.apps>
+      <file>${PROJECT_ROOT}\toolbox\animator.mlapp</file>
+    </param.registered.apps>
     <param.docs />
-    <param.getting.started.guide>${PROJECT_ROOT}\code\doc\GettingStarted.mlx</param.getting.started.guide>
+    <param.getting.started.guide>${PROJECT_ROOT}\toolbox\doc\GettingStarted.mlx</param.getting.started.guide>
     <param.matlabpath.excludes />
     <param.javaclasspath.excludes />
     <param.exported.on.package>false</param.exported.on.package>
@@ -74,7 +76,6 @@ ToolboxPackagingConfiguration.prj</param.exclude.filters>
     <unset>
       <param.summary />
       <param.description />
-      <param.version />
       <param.output />
       <param.products.name />
       <param.products.id />
@@ -84,7 +85,6 @@ ToolboxPackagingConfiguration.prj</param.exclude.filters>
       <param.examples />
       <param.demosxml />
       <param.apps />
-      <param.registered.apps />
       <param.docs />
       <param.matlabpath.excludes />
       <param.javaclasspath.excludes />
@@ -105,23 +105,25 @@ ToolboxPackagingConfiguration.prj</param.exclude.filters>
       <param.additional.sw.linux.url />
     </unset>
     <fileset.rootdir>
-      <file>${PROJECT_ROOT}\code</file>
+      <file>${PROJECT_ROOT}\toolbox</file>
     </fileset.rootdir>
     <fileset.rootfiles>
-      <file>${PROJECT_ROOT}\code\animator.mlapp</file>
-      <file>${PROJECT_ROOT}\code\doc</file>
-      <file>${PROJECT_ROOT}\code\splitCode.m</file>
-      <file>${PROJECT_ROOT}\code\sweep.m</file>
+      <file>${PROJECT_ROOT}\toolbox\animator.mlapp</file>
+      <file>${PROJECT_ROOT}\toolbox\DesktopToolset.xml</file>
+      <file>${PROJECT_ROOT}\toolbox\examples</file>
+      <file>${PROJECT_ROOT}\toolbox\GettingStarted.mlx</file>
+      <file>${PROJECT_ROOT}\toolbox\splitCode.m</file>
+      <file>${PROJECT_ROOT}\toolbox\sweep.m</file>
     </fileset.rootfiles>
     <fileset.depfun.included />
     <fileset.depfun.excluded />
     <fileset.package />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}" name="Animator.mltbx" optional="false">\\mathworks\devel\sandbox\gulley\github-enterprise\Animator\Animator.mltbx</file>
+      <file location="${PROJECT_ROOT}" name="Animator.mltbx" optional="false">C:\Users\gulley\OneDrive - MathWorks\Shared with Everyone\git\github-ext-gulley\Animator\Animator.mltbx</file>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>E:\jobarchive\Bmain\2022_10_21_h02m00s16_job2099115_pass\matlab</root>
+      <root>D:\bat\archive\R2023b\perfect\matlab</root>
       <toolboxes>
         <toolbox name="matlabcoder" />
         <toolbox name="embeddedcoder" />
