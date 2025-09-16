@@ -1,16 +1,37 @@
 function sweep(filename, codeLine, sweepRangeText, lineNumber, ...
         nSteps, animationOption, reverseFlag, ...
         saveAnimFlag, gifFileName, framesPerSecond)
-    %SWEEP Perform a parameter sweep for a section of code
-    
+%SWEEP Create animated GIF by sweeping a parameter through a range of values
+%   SWEEP(FILENAME, CODELINE, SWEEPRANGE, LINENUMBER, NSTEPS, ANIMOPTION, 
+%   REVERSEFLAG, SAVEFLAG, GIFNAME, FPS) creates an animation by modifying a 
+%   parameter in your MATLAB code and capturing the resulting plots.
+%
+%   Inputs:
+%       FILENAME - String, path to the M-file containing the plot code
+%       CODELINE - String, the line of code containing the parameter to animate
+%       SWEEPRANGE - String, range specification (e.g., '0:0.1:1' or '[0 1]')
+%       LINENUMBER - Integer, line number in the file to modify
+%       NSTEPS - Integer, number of steps in the animation
+%       ANIMOPTION - String, animation style ('linear', 'sinusoid')
+%       REVERSEFLAG - Logical, whether to include reverse animation
+%       SAVEFLAG - Logical, whether to save the animation to a file
+%       GIFNAME - String, name of the output GIF file
+%       FPS - Double, frames per second for the animation
+%
+%   Example:
+%       sweep('myplot.m', 'theta = 0', '0:0.1:2*pi', 5, 50, ...
+%            'linear', true, true, 'rotation.gif', 30)
+%
+%   See also SPLITCODE, FINDLINESTART, FINDLINESTOP
+
     sweepRange = findSweepRange(sweepRangeText);
     
     codeParts = regexp(codeLine,'=','split');
     % Strip all whitespace from the variable name
     sweepVar = regexprep(codeParts{1},'\s','');
-    
+
     target = [sweepVar '\s*=\s*-?\.?\d'];
-    
+
     % Get handle to editor
     edit(filename);
     hEditor = matlab.desktop.editor.getActive;
