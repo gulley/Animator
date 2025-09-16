@@ -1,2 +1,143 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<Info MetadataType="fixedPathV2"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<project MetadataType="monolithic">
+    <Info Location="ProjectData">
+        <Info Name="Animator"/>
+    </Info>
+    <Files Location="Root">
+        <File Location=".gitattributes">
+            <Info/>
+        </File>
+        <File Location=".gitignore">
+            <Info/>
+        </File>
+        <File Location="toolbox">
+            <Info/>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location="sweep.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="DesktopToolset.xml">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="derived"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="GettingStarted.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="animator.mlapp">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="examples">
+                <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="clock_demo.gif">
+                    <Info/>
+                </File>
+                <File Location="clock_demo.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="logo_demo.gif">
+                    <Info/>
+                </File>
+                <File Location="logo_demo.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+            </File>
+            <File Location="splitCode.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+        </File>
+        <File Location="tests">
+            <Info/>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location="animatorTests.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="test"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="smokeTest.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+        </File>
+    </Files>
+    <Categories Location="Root">
+        <Category Location="FileClassCategory">
+            <Info DataType="None" Name="Classification" ReadOnly="1" SingleValued="1"/>
+            <Label Location="design">
+                <Info Name="Design" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="derived">
+                <Info Name="Derived" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="artifact">
+                <Info Name="Artifact" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="convenience">
+                <Info Name="Convenience" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="other">
+                <Info Name="Other" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="test">
+                <Info Name="Test" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="none">
+                <Info Name="None" ReadOnly="READ_ONLY"/>
+            </Label>
+        </Category>
+    </Categories>
+    <Root Location="Extensions">
+        <Extension Location="Information">
+            <Info description=""/>
+        </Extension>
+    </Root>
+    <ProjectPath Location="Root">
+        <Reference Location="492f18e8-e3f8-4a22-aae8-6ba6533b6321">
+            <Info Ref="toolbox" Type="Relative"/>
+        </Reference>
+        <Reference Location="940788dd-586f-40d0-a5b4-9e936e89eb68">
+            <Info Ref="toolbox/examples" Type="Relative"/>
+        </Reference>
+        <Reference Location="e6ceeb17-6066-490a-ac3c-6c3db2f2bb70">
+            <Info Ref="tests" Type="Relative"/>
+        </Reference>
+    </ProjectPath>
+</project>
